@@ -1,0 +1,58 @@
+
+# Obter a lista de veiculos
+GET http://localhost:3000/api/veiculos
+Content-Type: application/json
+###
+
+
+# Inserir novo veiculo
+POST http://localhost:3000/api/veiculos
+Content-Type: application/json
+
+{
+ "modelo": "Marea Turbo", "cliente": "Neco",
+ "ano": "1985"
+}
+###
+
+# Alterar veiculo
+PUT http://localhost:3000/api/veiculos
+Content-Type: application/json
+
+{
+ "_id": "626c706697fff1c49ef53ba9",
+ "modelo": "Celta 1.0 Turbo",
+ "cliente": "Jaqson",
+ "ano": "2010"
+}
+###
+
+
+# Excluir um veiculo
+DELETE http://localhost:3000/api/veiculos/626bd4ba9a28a8451a155261
+Content-Type: application/json
+###
+
+
+# Obter pelo id do veiculo
+GET http://localhost:3000/api/veiculos/626c65f6aa68887229da1923
+Content-Type: application/json
+###
+
+
+# Obter veiculos filtrando
+GET http://localhost:3000/api/veiculos/filtro/
+Content-Type: application/json
+###
+
+# Usuário sem nome requerido.
+POST http://localhost:3000/api/veiculos
+Content-Type: application/json
+
+{
+ "modelo": "",
+ "cliente": "Jaqson",
+ "ano": "2010",
+
+}
+###

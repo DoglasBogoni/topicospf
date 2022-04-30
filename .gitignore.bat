@@ -1,0 +1,19 @@
+# Extensões
+*.tgz
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+*.war
+*.ear
+#*.zip
+*.tar.gz
+*.rar
+*.pid
+*.seed
+*.pid.lock
+#.env
+#.env.test
+.env.production
