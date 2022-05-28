@@ -11,6 +11,8 @@ const ColaboradorForm = (props) => {
 
   const[ contraSenha,setContraSenha] = useState();
 
+
+
   return (
     <form>
       <div>
@@ -56,9 +58,6 @@ const ColaboradorForm = (props) => {
       <Button label="Salvar" icon="pi pi-save" onClick={props.colaborador.salvar} className="p-button-secondary p-button-text" />
       <Button label="Cancelar" icon="pi pi-times-circle" onClick={props.colaborador.cancelar} className="p-button-secondary p-button-text" />
     </form>
-
-
-
   );
 };
 export default ColaboradorForm;
